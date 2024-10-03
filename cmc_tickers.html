@@ -5,10 +5,14 @@
             font-size: 16px; /* Adjust font size */
             color: #333; /* Adjust text color */
             overflow: hidden; /* Prevent scrollbars from appearing */
+            width: 100%; /* Ensure container takes full width */
+            box-sizing: border-box; /* Include padding/border in the element's total width and height */
         }
         #coinmarketcap-widget-coin-price-block {
-            width: 100%; /* Make sure the widget fits the container without horizontal scroll */
-            height: auto; /* Adjust to prevent vertical scroll */
+            width: 100%; /* Ensure the widget fits the container */
+            height: auto; /* Prevent vertical scrolling */
+            overflow: hidden; /* Avoid any additional scrollbars inside the widget */
+            display: block; /* Ensure it's displayed as a block-level element */
         }
     </style>
 </head>
