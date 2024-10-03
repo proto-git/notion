@@ -1,0 +1,29 @@
+<head>
+    <style>
+        /* Importing the Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        /* Styling the widget container */
+        .widget-container {
+            font-family: 'Inter', sans-serif; /* Apply Inter font */
+            font-size: 16px; /* Adjust the font size as needed */
+            color: #333; /* Set a readable text color */
+            overflow: hidden; /* Prevent any scrollbars */
+            width: 100%; /* Ensure full-width container */
+            box-sizing: border-box; /* Include padding/border in the total width/height */
+        }
+
+        #coinmarketcap-widget-marquee {
+            width: 100%; /* Ensure the widget fits within the container */
+            height: auto; /* Adjust height to avoid vertical scrollbars */
+            overflow: hidden; /* Prevent scrollbars within the widget */
+            display: block; /* Ensure proper block display */
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+        <div id="coinmarketcap-widget-marquee" coins="1,1027,5426,29270,30096,1974,27565,28652,7725,30434,30936" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
+    </div>
+</body>
